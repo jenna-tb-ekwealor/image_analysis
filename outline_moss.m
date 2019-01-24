@@ -1,3 +1,4 @@
+% this script will loop through already masked jpg images in the path and outline individual mosses/moss patches in the image in order to get some spatial data on them (such as area). this particular script focus on area and percent cover but can be modified to do other things, like perimeter etc.
 
 
 %% loop%%%
