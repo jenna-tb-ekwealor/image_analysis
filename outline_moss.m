@@ -2,7 +2,7 @@
 
 
 %% loop%%%
-path = '/Users/jennabaughman/Documents/berkeley/dissertation/chamber_pics/01_15_19/corrected/top_view/cropped/mask/';
+path = '/Users/jennaekwealor/Documents/berkeley/dissertation/chamber_pics/01_15_19/corrected/top_view/cropped/mask/';
 files = dir(fullfile(path,'*.jpg'));
 L = length (files);
 array_of_means = zeros(L,1); 
@@ -31,12 +31,12 @@ out_data.cover = 100*[(cell2mat(out_data.area_sum))/total_area];
 
 
 
-export(out_data, 'File', '/Users/jennabaughman/Documents/berkeley/dissertation/chamber_pics/01_15_19/corrected/top_view/cropped/mask/array_of_sums.csv', 'Delimiter',',')
+export(out_data, 'File', '/Users/jennaekwealor/Documents/berkeley/dissertation/chamber_pics/01_15_19/corrected/top_view/cropped/mask/array_of_sums.csv', 'Delimiter',',')
 
 %%
 % %% load image and convert to logical array (binary image)
 % 
-% imgRGB = imread('/Users/jennabaughman/Documents/berkeley/dissertation/chamber_pics/07_23_18/long-term/mask/brmUV_mask_13.jpg');
+% imgRGB = imread('/Users/jennaekwealor/Documents/berkeley/dissertation/chamber_pics/07_23_18/long-term/mask/brmUV_mask_13.jpg');
 % 
 % imgBW = im2bw(imgRGB,.1); % converts image to binary image, by replacing all pixels in the input image with luminance greater than level with the value 1 (white) and replacing all other pixels with the value 0 (black).
 % 
@@ -60,7 +60,7 @@ export(out_data, 'File', '/Users/jennabaughman/Documents/berkeley/dissertation/c
 % %showplottool('on','propertyeditor')
 % %title('Plate Binary Image and Plants Outlined','FontSize',18,'FontWeight','Bold');
 % 
-% %  ['/Users/jennabaughman/Documents/berkeley/dissertation/chamber_pics/07_23_18/long-term/mask/Area_BR_UV' num2str(i) ], 'csv')
+% %  ['/Users/jennaekwealor/Documents/berkeley/dissertation/chamber_pics/07_23_18/long-term/mask/Area_BR_UV' num2str(i) ], 'csv')
 % filename = 'brmUV_mask_4.csv'; 
 % 
 
