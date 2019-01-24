@@ -1,3 +1,4 @@
+% This script is a work in progress and needs to be further modified to be generalizable. In it's current state it is specific to my files and organization but it still may be useful.
 %%% %%BR m UV %%%
    
 cd '/Users/jennabaughman/Documents/berkeley/dissertation/chamber_pics/01_15_19/corrected/top_view/cropped/final/bow_river/-UV/';
@@ -6,7 +7,7 @@ mkdir montage
           %only jpg files. this can be changed to anything you like.
    fileNames = {dirOutput.name};
     BRmUV = montage(fileNames, 'ThumbnailSize', []);
-export_fig(['montage/' 'BRmUV'], '-jpeg', '-a1', '-native');
+export_fig(['montage/' 'BRmUV'], '-jpeg', '-a1', '-native'); %this was an importnat step to keep images in their original size and resolution in the montage
 %%% %%BR p UV %%%
 
    cd '/Users/jennabaughman/Documents/berkeley/dissertation/chamber_pics/01_15_19/corrected/top_view/cropped/final/bow_river/+UV/';
@@ -40,6 +41,9 @@ export_fig(['montage/' 'SCpUV'], '-jpeg', '-a1', '-native');
    
    
 %%%%   super montage %%%
+
+% i wanted to montage the four montages so that i could keep the groups together in the final montage
+
    cd '/Users/jennabaughman/Documents/berkeley/dissertation/chamber_pics/01_15_19/corrected/top_view/cropped/final/';
 copyfile 's_caninervis/+UV/montage/SCpUV.jpg' .
  copyfile  's_caninervis/-UV/montage/SCmUV.jpg' .
